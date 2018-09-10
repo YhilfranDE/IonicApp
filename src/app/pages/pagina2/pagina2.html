@@ -1,3 +1,16 @@
+<style type="text/css">
+	
+	.logo_sa{
+
+		margin-top: 60px;
+		box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .14), 0 7px 10px -5px rgba(62, 55, 57, 0.4);
+		border-radius: 50%;
+		width: 100px;
+		height: 100px;
+	}
+
+</style>
+
 <ion-header>
   <ion-navbar>
     <ion-buttons left>
@@ -8,7 +21,20 @@
   </ion-navbar>
 </ion-header>
 
+<ion-content>
 
-<ion-content padding class="getting-started">
-  Pagina 2
+<ion-card>
+ <img class = "logo_sa" src="{{ user_perfil.imagen }}">
+  <ion-card-content>
+    <ion-card-title>
+      Nine Inch Nails Live
+      </ion-card-title>
+    <p>
+      The most popular industrial group ever, and largely
+      responsible for bringing the music to a mass audience.
+    </p>
+  </ion-card-content>
+</ion-card>	
+		
 </ion-content>
+

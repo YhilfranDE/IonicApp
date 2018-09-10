@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Service } from '../../services/service';
+import { AlertController, LoadingController } from 'ionic-angular';
 
 @Component({
   selector: 'pagina2',
@@ -7,6 +8,8 @@ import { Service } from '../../services/service';
 })
 export class Pagina2 {
 
+	user_perfil : any;
+  public generalLoading: boolean = false;
 
   constructor(private auth: Service){
 
@@ -15,8 +18,11 @@ export class Pagina2 {
   }
 
   public verPerfil(){
-    let user_perfil = this.auth.getUserInfo();
-    console.log("ver perfil",user_perfil);
+    this.generalLoading = true;
+    this.user_perfil = this.auth.getUserInfo();
+    
+    console.log("ver perfil",this.user_perfil);
+    this.generalLoading = false;
   }
 
 }

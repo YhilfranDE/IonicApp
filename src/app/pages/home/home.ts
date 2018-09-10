@@ -6,7 +6,6 @@ import { Http, Headers } from '@angular/http';
 import { AlertController, LoadingController } from 'ionic-angular';
 
 
-
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'

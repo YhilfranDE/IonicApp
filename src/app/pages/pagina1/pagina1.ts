@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Service } from '../../services/service';
+//import { Service } from '../../services/service';
 
 @Component({
   selector: 'pagina1',
@@ -9,7 +9,7 @@ import { Service } from '../../services/service';
 export class Pagina1 {
 
 
-  constructor(private auth: Service){
+  constructor(){
 
   }
 
