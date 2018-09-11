@@ -1,13 +1,24 @@
 <ion-header>
   <ion-navbar>
+    <ion-title>
+      Página 1
+    </ion-title>    
     <ion-buttons left>
       <button ion-button menuToggle="leftMenu">
         <ion-icon name="menu"></ion-icon>
-      </button>
+      </button>     
     </ion-buttons>
+    <ion-buttons end>
+         <button ion-text color="primary" ion-button icon-only round (click)="verPerfil()">
+          <ion-icon name="md-contact"></ion-icon>
+         </button>     
+
+         <button ion-text color="primary" ion-button icon-only round (click)="logout()">
+          <ion-icon name="md-exit"></ion-icon>
+         </button> 
+    </ion-buttons>    
   </ion-navbar>
 </ion-header>
-
 
 <ion-content padding class="getting-started">
   Pagina 1

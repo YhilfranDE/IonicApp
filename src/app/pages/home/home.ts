@@ -1,8 +1,11 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
 import { Service } from '../../services/service';
+import { NavController, AlertController } from 'ionic-angular';
+
+//Páginas
 import { Login } from '../login/login';
-import { AlertController } from 'ionic-angular';
+import { Pagina2 } from '../pagina2/pagina2';
+
 
 
 @Component({
@@ -22,7 +25,8 @@ export class HomePage {
 
   constructor(public navCtrl: NavController, 
               private auth: Service,
-              public alertCtrl: AlertController){
+              public alertCtrl: AlertController,
+              private nav: NavController){
 
     this.Books();
   }
@@ -100,4 +104,8 @@ export class HomePage {
     }// si el input de busqueda está vacío vuelvo a cargar los libros
   }
 
+
+  verPerfil(){
+    this.nav.setRoot(Pagina2);
+  }
 }

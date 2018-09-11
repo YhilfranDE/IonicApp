@@ -3,6 +3,7 @@ import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+//Páginas
 import { HomePage } from '../home/home';
 import { Pagina1 } from '../pagina1/pagina1';
 import { Pagina2 } from '../pagina2/pagina2';
@@ -20,16 +21,17 @@ export class Home2 {
 
   rootPage: any = Pagina1;
 
-  pages: Array<{title: string, component: any}>;
+  pages: Array<{title: string, icono:string, component: any}>;
 
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Pagina1', component: Pagina1 },
-      { title: 'Pagina2', component: Pagina2 },
-      { title: 'Books', component: HomePage }
+      { title: 'Pagina1',icono: 'md-browsers', component: Pagina1 },
+      { title: 'Perfíl', icono: 'md-contact', component: Pagina2 },
+      { title: 'Books', icono: 'md-book', component: HomePage }
+      
     ];
 
   }

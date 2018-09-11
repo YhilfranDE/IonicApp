@@ -1,16 +1,18 @@
-<ion-menu id="leftMenu" [content]="content" side="left" type="overlay">
+<ion-menu  id="leftMenu" [content]="content" side="left" type="overlay">
   <ion-header>
-    <ion-toolbar>
+    <ion-toolbar color="primary">
       <ion-title>Menu</ion-title>
     </ion-toolbar>
   </ion-header>
   <ion-content>
     <ion-list>
-      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">{{p.title}}</button>
+      
+      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)"><ion-icon name="{{ p.icono }}" item-start ></ion-icon>{{p.title}} <ion-icon name="ios-arrow-forward-outline" item-end></ion-icon></button>
+
     </ion-list>
   </ion-content>
 </ion-menu>
-<ion-menu id="rightMenu" [content]="content" side="right" type="reveal">
+<!-- <ion-menu id="rightMenu" [content]="content" side="right" type="reveal">
   <ion-header>
     <ion-toolbar>
       <ion-title>Items</ion-title>
@@ -27,7 +29,7 @@
       </ion-card-content>
     </ion-card>
   </ion-content>
-</ion-menu>
+</ion-menu> -->
 
 <!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
 <ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

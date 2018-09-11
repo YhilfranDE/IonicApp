@@ -72,8 +72,6 @@ export class Service {
       bookings.append('adminemail', email);
       //console.log(url+email+"/bookings?current=true");
       return this.http.get(url+email2+"/bookings", {headers: bookings}); 
-
-
   }
 
 

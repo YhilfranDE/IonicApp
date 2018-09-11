@@ -1,8 +1,8 @@
 <style type="text/css">
-	
+
 	.logo_sa{
 
-		margin-top: 60px;
+		/*margin-top: 60px;*/
 		box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .14), 0 7px 10px -5px rgba(62, 55, 57, 0.4);
 		border-radius: 50%;
 		width: 100px;
@@ -13,25 +13,42 @@
 
 <ion-header>
   <ion-navbar>
+    <ion-title>
+      Perfíl
+    </ion-title>    
     <ion-buttons left>
       <button ion-button menuToggle="leftMenu">
         <ion-icon name="menu"></ion-icon>
-      </button>
+      </button>     
     </ion-buttons>
+    <ion-buttons end>
+         <button ion-text color="primary" ion-button icon-only round (click)="verPerfil()">
+          <ion-icon name="md-contact"></ion-icon>
+         </button>     
+
+         <button ion-text color="primary" ion-button icon-only round (click)="logout()">
+          <ion-icon name="md-exit"></ion-icon>
+         </button> 
+    </ion-buttons>    
   </ion-navbar>
 </ion-header>
 
 <ion-content>
 
 <ion-card>
- <img class = "logo_sa" src="{{ user_perfil.imagen }}">
+  <ion-row class="logo-row">
+    <ion-col col-4 col-sm-5 col-md-5 col-lg-6 col-xl-6></ion-col>
+      <ion-col >
+        <img class = "logo_sa" src="{{ user_perfil.imagen }}">  
+      </ion-col>
+  </ion-row>  
+    
   <ion-card-content>
-    <ion-card-title>
-      Nine Inch Nails Live
-      </ion-card-title>
-    <p>
-      The most popular industrial group ever, and largely
-      responsible for bringing the music to a mass audience.
+    <ion-card-title text-center>
+      {{ user_perfil.firstName }} {{ user_perfil.lastName }}
+    </ion-card-title>
+    <p text-center>
+      <strong> {{ user_perfil.email }} </strong>
     </p>
   </ion-card-content>
 </ion-card>	
