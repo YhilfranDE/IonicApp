@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { Service } from '../../services/service';
-import { AlertController, LoadingController } from 'ionic-angular';
 
 @Component({
   selector: 'pagina2',

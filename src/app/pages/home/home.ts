@@ -2,8 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { Service } from '../../services/service';
 import { Login } from '../login/login';
-import { Http, Headers } from '@angular/http';
-import { AlertController, LoadingController } from 'ionic-angular';
+import { AlertController } from 'ionic-angular';
 
 
 @Component({
@@ -23,8 +22,7 @@ export class HomePage {
 
   constructor(public navCtrl: NavController, 
               private auth: Service,
-              public alertCtrl: AlertController,
-              private loadingCtrl: LoadingController){
+              public alertCtrl: AlertController){
 
     this.Books();
   }
@@ -34,7 +32,6 @@ export class HomePage {
    this.generalLoading = true;
    let info = this.auth.getUserInfo();
    let rut;
-   let string = '';
    let json_bk :any;
    let i = 0;
 
