@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, AlertController, LoadingController, Loading} from 'ionic-angular';
 import { Service } from '../../services/service';
-//import { HomePage } from '../home/home';
+import { HomePage } from '../home/home';
 import { Home2 } from '../home2/home2';
 
 @Component({

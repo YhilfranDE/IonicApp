@@ -111,8 +111,7 @@ export class HomePage {
   }
 
   openNavDetailsPage(book) {
-    console.log(book);
-    this.nav.push(Pagina1, { book: book });
+    this.nav.push(Pagina1, { book: book });//push para pasar la data
   }
 
 

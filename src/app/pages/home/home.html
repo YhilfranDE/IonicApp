@@ -31,6 +31,7 @@
   <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
 
   <ion-spinner color = "" style="margin:150px 130px;" name="crescent" center text-center *ngIf="generalLoading"></ion-spinner>
+  
   <ion-grid *ngIf="!generalLoading">
 
     <div *ngIf="!!items.length">
@@ -90,12 +91,3 @@
     </div>
   </ion-grid>
 </ion-content>
-
-<!-- <ion-list>
-  <ion-item *ngFor="let book of bookings">
-    <h2>title</h2>
-    <p><strong>Fecha de Creación:</strong> {{book.bookingTime}}</p>
-    <p><strong>Dirección:</strong> {{book.locationId.streetAddress}}</p>
-    <p><strong>Precio:</strong> {{book.bookingPrice}}</p>
-  </ion-item>
-</ion-list> -->

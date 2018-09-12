@@ -5,7 +5,6 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 //Páginas
 import { HomePage } from '../home/home';
-import { Pagina1 } from '../pagina1/pagina1';
 import { Pagina2 } from '../pagina2/pagina2';
 
 
@@ -19,7 +18,7 @@ export class Home2 {
   // luisjordan.net - Declaramos una nueva variable para controlar el texto mostrado
   text: string = '';
 
-  rootPage: any = Pagina1;
+  rootPage: any = HomePage; // con esto cargamos la pagina principal del menu ya que con el login se carga la del menu como tal..
 
   pages: Array<{title: string, icono:string, component: any}>;
 
@@ -30,7 +29,6 @@ export class Home2 {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Pagina1',icono: 'md-browsers', component: Pagina1 },
       { title: 'Perfíl', icono: 'md-contact', component: Pagina2 },
       { title: 'Books', icono: 'md-book', component: HomePage }
       

@@ -1,4 +1,4 @@
-<ion-header>
+<!-- <ion-header>
   <ion-navbar>
     <ion-title>
       Navegacion
@@ -21,5 +21,45 @@
 </ion-header>
 
 <ion-content>
-<h1>pagina 1</h1>
+<h2>BookingId: {{ book.bookingId }}</h2>
+</ion-content> -->
+<ion-header>
+  <ion-navbar color = "primary">
+    <ion-title>
+      Navegacion
+    </ion-title>    
+    <ion-buttons left>
+      <button ion-button menuToggle="leftMenu">
+        <ion-icon name="menu"></ion-icon>
+      </button>     
+    </ion-buttons>
+    <ion-buttons end>
+         <button ion-text color="primary" ion-button icon-only round (click)="verPerfil()">
+          <ion-icon name="md-contact"></ion-icon>
+         </button>     
+
+         <button ion-text color="primary" ion-button icon-only round (click)="logout()">
+          <ion-icon name="md-exit"></ion-icon>
+         </button> 
+    </ion-buttons>    
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+      <ion-item>
+        <ion-avatar item-start>
+          <img src="#">
+        </ion-avatar>
+        <h2>Nombre</h2>
+        <p>Quota</p>
+      </ion-item>
+
+      <ion-item >
+        Título
+        <ion-note item-end>
+          Nota
+        </ion-note>
+      </ion-item>
+  </ion-list>
 </ion-content>
