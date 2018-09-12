@@ -15,10 +15,11 @@ import { Service } from '../../services/service';
   //styleUrls: ['pagina1.css']
 })
 export class Pagina1 {
-
+  
+  book : any = {};
 
   constructor(private auth: Service, private nav: NavController){
-
+     console.log("mostrando el libro: ",this.book);
   }
 
   verPerfil(){

@@ -23,7 +23,9 @@ export class Home2 {
 
   pages: Array<{title: string, icono:string, component: any}>;
 
-  constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
+  constructor(public platform: Platform, 
+              public statusBar: StatusBar, 
+              public splashScreen: SplashScreen) {
     this.initializeApp();
 
     // used for an example of ngFor and navigation

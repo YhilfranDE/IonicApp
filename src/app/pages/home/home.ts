@@ -5,6 +5,7 @@ import { NavController, AlertController } from 'ionic-angular';
 //Páginas
 import { Login } from '../login/login';
 import { Pagina2 } from '../pagina2/pagina2';
+import { Pagina1 } from '../pagina1/pagina1';
 
 
 
@@ -108,4 +109,11 @@ export class HomePage {
   verPerfil(){
     this.nav.setRoot(Pagina2);
   }
+
+  openNavDetailsPage(book) {
+    console.log(book);
+    this.nav.push(Pagina1, { book: book });
+  }
+
+
 }
