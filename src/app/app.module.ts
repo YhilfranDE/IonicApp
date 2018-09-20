@@ -10,7 +10,7 @@ import { MyApp } from './app.component';
 
 import { HomePage } from './pages/home/home';
 import { Login } from './pages/login/login';
-import { Home2} from './pages/home2/home2';
+import { Menu} from './pages/menu/menu';
 import { Pagina1 } from './pages/pagina1/pagina1';
 import { Pagina2 } from './pages/pagina2/pagina2';
 
@@ -23,7 +23,7 @@ import { Service } from './services/service';
     MyApp,
     HomePage,
     Login,
-    Home2,
+    Menu,
     Pagina1,
     Pagina2
   ],
@@ -37,7 +37,7 @@ import { Service } from './services/service';
     MyApp,
     HomePage,
     Login,
-    Home2,
+    Menu,
     Pagina1,
     Pagina2    
   ],

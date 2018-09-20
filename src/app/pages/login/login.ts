@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController, AlertController, LoadingController, Loading} from 'ionic-angular';
 import { Service } from '../../services/service';
-import { HomePage } from '../home/home';
-import { Home2 } from '../home2/home2';
+//import { HomePage } from '../home/home';
+import { Menu } from '../menu/menu';
 
 @Component({
   selector: 'page-login',
@@ -37,7 +37,7 @@ export class Login {
     this.showLoading();
     this.auth.login(this.registerDatas).subscribe(allowed => {
       if (allowed) {
-        this.nav.setRoot(Home2);
+        this.nav.setRoot(Menu);
       } else {
         this.showError("Email o Password incorrectos");
       }

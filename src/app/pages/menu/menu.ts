@@ -9,9 +9,9 @@ import { Pagina2 } from '../pagina2/pagina2';
 
 
 @Component({
-  templateUrl: 'home2.html'
+  templateUrl: 'menu.html'
 })
-export class Home2 {
+export class Menu {
 
   @ViewChild(Nav) nav: Nav;
 
